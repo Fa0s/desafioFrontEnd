@@ -2,7 +2,7 @@
 <br><br><br>
 
 # 📰 Índice
-<br>
+<br></br>
 
 - [Sobre](#-Sobre)
 - [Objetivo do Projeto](#-Objetivo-do-Projeto)
@@ -10,12 +10,12 @@
 <br></br>
 
 # 📃 Sobre
-<br>
+<br></br>
  Este projeto foi desenvolvido como parte de um desafio técnico para um processo seletivo. O objetivo é criar um formulário para cadastro de usuários e exibir os dados cadastrados de forma organizada.
  <br><br>
 
 # 🚩 Objetivo do Projeto
-<br>
+<br></br>
 O desafio consiste em desenvolver:
 - Formulário de Cadastro de Usuários
     - Campos: Nome, e-mail, endereço (com preenchimento automático usando uma API de CEP), e origem (digital ou físico).
@@ -27,7 +27,7 @@ O desafio consiste em desenvolver:
 <br></br>
 
 # 📋 Instruções de Uso
-<br>
+<br></br>
 
 - Preencha todos os campos do formulário com os dados do usuário.
 - Após digitar o Cep corretamente, os campos Rua, Bairro, Cidade e Estado serão preenchidos automaticamente.

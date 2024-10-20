@@ -1,5 +1,5 @@
 <h1 align='center'> Desafio Frond-End </h1>
-<br><br><br>
+<br></br>
 
 # 📰 Índice
 <br></br>

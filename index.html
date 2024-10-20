@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro de Usuários</title>
+</head>
+<body>
+    <h1 class="titulo">Cadastro de usuários</h1>
+    <main class="container">
+        <section class="cadastro">
+            <span class="cadastro_instrucao, instrucao">Por favor, preencha as informações abaixo:</span>
+            <div class="cadastro_container">
+                <input type="text" placeholder="Nome completo" id="nome" class="cadastro_nome, cadastro_input">
+                <input type="email" placeholder="E-mail" id="email" class="cadastro_email, cadastro_input"> 
+                <input type="number" autocomplete="off" placeholder="CEP" id="cep" class="cadastro_cep, cadastro_input"> 
+                <input type="text" placeholder="Rua" id="rua" class="cadastro_rua, cadastro_input">
+                <input type="number" placeholder="Numero" id="numero" class="cadastro_numero, cadastro_input">
+                <input type="text" placeholder="Bairro" id="bairro" class="cadastro_bairro, cadastro_input">
+                <input type="text" placeholder="Cidade" id="cidade" class="cadastro_cidade, cadastro_input">
+                <input type="text" placeholder="Estado" id="estado" class="cadastro_estado, cadastro_input">
+            </div>
+            <div class="cadastro_origem">
+                <span class="origem_instrucao">Origem do usuário:</span>
+                <div class="origem_container">
+                    <label for="fisico" class="origem_tipo">Físico</label>
+                    <input type="radio" value="fisico" class="origem_radio" id="fisico" name="origem">
+                    <label for="digital" class="origem_tipo">Digital</label>
+                    <input type="radio" value="digital" class="origem_radio" id="digital" name="origem">
+                </div>
+                <button type="button" id="botao_cadastro" class="botao">Enviar</button>
+                </div>
+            </section>
+            <section class="relatorio">
+                <h2 class="relatorio_titulo">Relatório de usuários</h2>
+                <span class="relatorio_instrucao">Selecione qual o tipo de relatório deseja visualizar:</span><br>
+                
+                <div class="relatorios_container">
+                    <div id="relatorio_tipos" class="relatorio_tipos">
+                        <label for="relatorios" class="relatorio_instrucao">Selecione o tipo de relatório:</label>
+                        <select id="relatorios">
+                            <option value="" disabled selected hidden>Tipos de relatório</option>
+                            <option value="estado">Estado</option>
+                            <option value="origem">Origem</option>
+                            <option value="todos">Geral</option>
+                        </select>
+                    </div>
+
+                    <div id="relatorio_origem" style="display: none;">
+                        <label for="seletor_origem" class="relatorio_instrucao">Selecione a origem:</label>
+                        <select id="seletor_origem">
+                            <option value="" disabled selected hidden >Selecione a origem</option>
+                            <option value="fisico">Físico</option>
+                            <option value="digital">Digital</option>
+                    </select>
+                    </div>
+                    
+                    <div id="relatorio_estado" style="display: none;">
+                        <label for="seletor_estado" class="relatorio_instrucao">Selecione o estado:</label>
+                        <select id="seletor_estado">
+                            <option value="" disabled selected hidden>Selecione um estado:</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="botao" id="botao_relatorio">Relatório</button>
+                
+                <div class="relatorio_tabela" id="tabela">
+                </div>
+
+            </section>
+        </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
